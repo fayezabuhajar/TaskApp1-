@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient List</title>
+    <link rel="stylesheet" href="PatientList.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Patient List</h3>
+        </div>
+        <div class="sub-header">
+            <a href="PatientInfo.html"> 
+                <button class="sub-patient-buttom">Add Patient</button>
+            </a>
+            
+        </div>
+        
+        <div class="controls">
+            <label for="entries">Show 
+                <select id="entries">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select> entries
+            </label>
+            
+            <div class="search-container">
+                Search:
+                <input type="text" id="search" placeholder="Use english name">
+            </div>
+        </div>
+        
+        <div class="table-container">
+            <table id="patientTable">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Arabic Name</th>
+                        <th>English Name</th>
+                        <th>Phone Number</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be injected here via JS -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>No</th>
+                        <th>Arabic Name</th>
+                        <th>English Name</th>
+                        <th>Phone Number</th>
+                        <th>Action</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="pagination">
+            <div class="page-info">
+                Showing <span class="current-start">1</span>
+                 to <span class="current-end">5</span> of <span class="total-entries">6</span> entries 
+            </div>
+            <button class="previous">Previous</button>
+            <span class="page-number">1</span>
+            <button class="next">Next</button>
+        </div>
+    </div>
+    <script src="PatientList.js"></script>
+</body>
+</html>

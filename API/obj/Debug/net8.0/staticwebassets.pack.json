@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\TaskApp1\\API\\wwwroot\\PatientInfo.css",
+      "PackagePath": "staticwebassets\\PatientInfo.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\TaskApp1\\API\\wwwroot\\PatientInfo.html",
+      "PackagePath": "staticwebassets\\PatientInfo.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\TaskApp1\\API\\wwwroot\\PatientInfo.js",
+      "PackagePath": "staticwebassets\\PatientInfo.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\TaskApp1\\API\\wwwroot\\PatientList.css",
+      "PackagePath": "staticwebassets\\PatientList.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\TaskApp1\\API\\wwwroot\\PatientList.html",
+      "PackagePath": "staticwebassets\\PatientList.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\TaskApp1\\API\\wwwroot\\PatientList.js",
+      "PackagePath": "staticwebassets\\PatientList.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.API.props",
+      "PackagePath": "build\\API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.API.props",
+      "PackagePath": "buildMultiTargeting\\API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.API.props",
+      "PackagePath": "buildTransitive\\API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

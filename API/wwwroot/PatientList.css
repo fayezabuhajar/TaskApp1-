@@ -1,0 +1,202 @@
+/* styles.css */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+.sub-header{
+    padding: 5px;
+    margin: 15px;
+}
+
+.sub-patient-buttom { 
+    background-color: #007bff; /* اللون الأزرق */ 
+    color: white; /* لون الخط الأبيض */ 
+    border: none; /* إزالة الحدود */ 
+    padding: 10px 20px; /* إضافة بعض التباعد الداخلي */ 
+    border-radius: 5px; /* إضافة زوايا مستديرة */ 
+    cursor: pointer; /* تغيير شكل المؤشر عند التمرير على الزر */ } 
+    
+    .sub-patient-buttom:hover { 
+        opacity: 0.9; /* تأثير التعتيم عند التمرير */ }
+
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.search-container {
+    text-align: right; /* محاذاة العنصر إلى اليمين */
+    margin-bottom: 10px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 5px;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+.add-patient {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-left: 20px; 
+    color: rgba(0, 0, 0, 0.5);
+    
+}
+
+
+.table-container { 
+    max-height: 260px;
+    overflow-y: auto;
+    border: 1px solid #ccc; 
+} 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+ } 
+ 
+table th, table td { 
+    border: 1px solid #ccc; 
+    padding: 8px;
+     text-align: left; 
+    } 
+    
+table th { 
+        background-color: #f2f2f2; 
+    }
+
+    thead th {
+        position: sticky;
+        top: 0;
+        background-color: #ffffff;
+        z-index: 2; /* تأكد من ظهور الرؤوس فوق باقي العناصر */ }
+tfoot th {
+    position: sticky;
+    bottom: 0;
+    background-color: #ffffff;
+    z-index: 2; /* تأكد من ظهور التذييل فوق باقي العناصر */ }
+
+/* حدد لون للخلفية لكل صف */
+#patientTable tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* لون للأعمدة الفردية */
+}
+
+#patientTable tbody tr:nth-child(even) {
+    background-color: #ffffff; /* لون للأعمدة الزوجية */
+}
+
+/* يمكنك تغيير الألوان كما تراه مناسبًا */
+
+
+button {
+    border: none; /* إخفاء محيط جميع الأزرار */
+    background: none; /* إخفاء خلفية الأزرار لجعلها شفافة */
+    cursor: pointer; /* تغيير شكل المؤشر عند التمرير فوق الزر */
+    
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between; /* توزيع الأزرار بالتساوي */
+    width: 100%;
+}
+
+.action-buttons button {
+    flex: 1;
+    margin: 0 5px; /* إضافة مسافة بين الأزرار */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+.page-number {
+    align-self: center; /* ضمان أن الرقم في المنتصف عمودياً */
+    padding: 8px; /* إضافة التباعد الداخلي بدلاً من الهامش */
+    background: #007bff;    
+    color: white; /* لون النص الأبيض ليتناسب مع الخلفية */
+    border-radius: 5px; /* إضافة زوايا مستديرة إذا كنت ترغب */
+}
+
+
+.pagination { 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    gap: 2px; 
+}
+     
+.pagination .previous, .pagination .next { 
+    border: 1px solid rgba(0, 0, 0, 0.5);; 
+    border-radius: 5px;
+    padding: 8px 12px; 
+    background: none; 
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer; 
+}
+.pagination .previous:hover, .pagination .next:hover {
+    background-color: #007bff; 
+    color: white; 
+}
+
+
+
+.page-info { 
+    flex-grow: 1;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+button.view {
+    
+    color: #fff;
+}
+
+button.edit {
+    
+    color: #fff;
+}
+
+button.delete {
+    
+    color: #fff;
+}
+
+button.add {
+    
+    color: #fff;
+  
+}
+
+button:hover {
+    opacity: 0.9;
+}

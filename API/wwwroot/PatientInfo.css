@@ -1,0 +1,93 @@
+body { 
+  font-family: Arial, sans-serif; 
+  background-color: #f4f4f9; 
+  margin: 0; 
+  padding: 0; 
+} 
+
+.container { 
+  max-width: 900px; 
+  margin: 20px auto; 
+  background: #fff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  padding: 20px; 
+} 
+
+.header { 
+  background-color: #007bff; 
+  padding: 15px; 
+  color: #fff; 
+  border-radius: 8px 8px 0 0; 
+  text-align: center; 
+} 
+
+form { 
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 15px; 
+} 
+
+.form-group { 
+  flex: 1 1 45%; 
+  display: flex; 
+  flex-direction: column; 
+} 
+
+.form-group label { 
+  font-weight: bold; 
+  margin-bottom: 5px; 
+} 
+
+input, textarea, select, button { 
+  padding: 8px; 
+  font-size: 14px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  outline: none; 
+} 
+
+textarea { 
+  resize: vertical; 
+} 
+
+button { 
+  cursor: pointer; 
+} 
+
+button.save-btn { 
+  background-color: #28a745; 
+  color: #fff; 
+  border: none; 
+} 
+
+button.cancel-btn { 
+  background-color: #dc3545; 
+  color: #fff; 
+  border: none; 
+} 
+
+button:hover { 
+  opacity: 0.9; 
+} 
+
+.arabic-name-fields { 
+  display: flex; 
+} 
+
+.arabic-name-fields .form-control { 
+  border-radius: 0; 
+  border-right-width: 0; 
+} 
+
+.arabic-name-fields .form-control:last-of-type { 
+  border-right-width: 1px; 
+  border-top-right-radius: 5px; 
+  border-bottom-right-radius: 5px; 
+} 
+
+.arabic-name-fields .form-control:first-of-type { 
+  border-left-width: 1px; 
+  border-top-left-radius: 5px; 
+  border-bottom-left-radius: 5px; 
+}
